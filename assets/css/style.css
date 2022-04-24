@@ -5,10 +5,10 @@
 }
 
 body{
-    background-color: rgb(194, 95, 3);
     font-family: 'Kufam', sans-serif;
     color:antiquewhite;
     font-size: 25px;
+    background-image: linear-gradient(to bottom,rgb(250, 121, 0), rgb(143, 72, 5));
 }
 
 .pantallainicio{
@@ -50,6 +50,10 @@ body{
     align-items: center;
     justify-content: space-evenly;
 }   
+
+.tarjetainicio:hover{
+    transform: translate(10px,10px);
+}
 
 .tarjetainicio a{
     text-decoration: none;
@@ -200,6 +204,10 @@ ul li:hover ul{
     border-color: rgb(238, 255, 1);
 }
 
+.BotonProducto:hover{
+    transform: translate(10px,10px);
+}
+
 .BotonProducto img{
     width: 220px;
     border-radius: 10px;
@@ -214,9 +222,9 @@ ul li:hover ul{
     color:black;
     border:solid;
     width: 500px;
-    height:400px;
+    height:auto;
     margin:5px;
-    margin-top: 50px; /*este margin lo deje para que me quede centrado el h2, sino queda escondido en la barra del navegador*/
+    margin-top: 50px;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 200px;
@@ -412,6 +420,7 @@ h2{
         align-items: center;
         flex-wrap: wrap;
     }
+
     .producto{
         margin-top: 80px;
         display:flex;
@@ -425,6 +434,7 @@ h2{
         flex-wrap: wrap;
         flex-direction: column ;
     }
+  
     .caja-productos{
         width:400px;
         height:350px;
