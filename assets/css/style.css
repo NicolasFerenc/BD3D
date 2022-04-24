@@ -1,0 +1,506 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(194, 95, 3);
+    font-family: 'Kufam', sans-serif;
+    color:antiquewhite;
+    font-size: 20px;
+}
+
+.pantallainicio{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat (3, auto);
+    grid-template-areas: "header"
+                         "main"
+                         "footer"; 
+}
+
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;    
+}
+
+.maininicio{
+    grid-area: main;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+    padding:2rem 0;
+}
+
+.tarjetainicio{
+    display: flex;
+    width:400px;
+    height:300px;    
+    background-color: rgba(151, 148, 148, 0.719);
+    border-radius: 10px;
+    color:antiquewhite;
+    margin:10px;
+    font-size: 18px;
+    border:solid;
+    border-color: rgb(238, 255, 1);
+    box-shadow:  4px 4px rgba(124, 124, 123, 0.6);
+    align-items: center;
+    justify-content: space-evenly;
+}   
+
+.tarjetainicio a{
+    text-decoration: none;
+    color:black;
+    text-align: center;
+    margin:40px;
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+.tarjetainicio a:hover{
+    color:yellow;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    
+}
+
+footer img{
+    border-radius: 5px;
+}
+
+footer a{
+    text-decoration: none;
+    color:white;
+    }
+
+footer p{
+    text-align: center;
+}
+
+.barrainicio{
+    grid-area: header;
+    z-index: 1;
+    width: 100%;
+    background-color: black;
+}
+
+.barrainicio p{
+    text-align: center;
+    font-size: 60px;
+}
+
+.barrainicio img{
+    display: flex;
+    align-self:flex-start;
+    align-self: right;
+}
+
+.productos {
+    background-image: url(../img/productosinicio.png);
+}
+
+.pv{
+    background-image: url(../img/pvinicio.png);
+}
+
+.qs{
+    background-image: url(../img/QSinicio.png);
+}
+
+.contactos{
+    background-image: url(../img/contactoinicio.png);
+}
+
+nav{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    top:0;
+    z-index: 20;
+    background-color: rgb(124, 62, 3);
+}
+
+nav img{
+    width: 40px;
+}
+
+nav a{
+    color:white;
+    text-decoration: none;
+   
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+section{
+    color:black;
+    margin-top:60px;
+    font-size: 40px;
+}
+
+ul{
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    display: flex;
+    display:inline-block;
+    position:relative;
+}
+
+ul ul{
+    display: none;
+    position: absolute;
+}
+
+ul ul li{
+    display: block;
+    width: 300px;
+    padding:1rem;
+    background:rgba(124, 61, 3, 0.767);
+    margin:0.3rem;
+    border-radius: 5px;
+}
+
+ul li:hover ul{
+    display:block;
+} 
+
+.BotonProducto{
+    width:300px;
+    height:300px;
+    background-color: rgba(151, 148, 148, 0.719);
+    border-radius: 10px;
+    color:antiquewhite;
+    margin:10px;
+    text-align: center;
+    font-size: 18px;
+    border:solid;
+    border-color: rgb(238, 255, 1);
+}
+
+.BotonProducto img{
+    width: 220px;
+    border-radius: 10px;
+}
+
+.BotonProducto a{
+    text-align: center;
+}
+
+.formulario{
+    background-color: white;
+    color:black;
+    border:solid;
+    width: 500px;
+    height:400px;
+    margin:5px;
+    margin-top: 50px; /*este margin lo deje para que me quede centrado el h2, sino queda escondido en la barra del navegador*/
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 200px;
+    border-color: rgb(238, 255, 1);
+    text-align: left;
+}
+
+.formulario h3{
+    color:black;    
+}
+
+.qsinicio{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PaginaVinculada{
+    width:400px;
+    height: 400px;
+    background-color: rgba(151, 148, 148, 0.719);
+    border-radius: 10px;
+    color:antiquewhite;
+    text-align: center;
+    font-size: 18px;
+    border:solid;
+    border-color: rgb(238, 255, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.PaginaVinculada img{
+    width: 350px;
+    margin:15px;
+    border-radius: 10px;
+}
+
+.qsinicio{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.caja{
+    width:800px;
+    height:300px;
+    background-color: rgba(151, 148, 148, 0.719);
+    border-radius: 10px;
+    color:antiquewhite;
+    margin:10px;
+    padding:5px;
+    text-align: left;
+    font-size: 18px;
+    border:solid;
+    border-color: rgb(238, 255, 1);
+}
+
+.caja h3{
+    font-size: 30px;
+    color:black;
+}
+
+h2{
+    font-size: 24px;
+    color:white;
+}
+
+.producto{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:2rem 0;  
+
+}
+
+.producto h2{
+    color:white;
+    font-size: 24px;
+}
+
+.subproducto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding:2rem 0;  
+}
+
+.caja-productos{
+    width:800px;
+    height:auto;
+    background-color: rgba(151, 148, 148, 0.719);
+    border-radius: 10px;
+    color:antiquewhite;
+    margin:10px;
+    text-align: center;
+    font-size: 18px;
+    border:solid;
+    border-color: rgb(238, 255, 1);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.caja-productos img{
+    display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 250px;
+        border-radius: 10px;
+}
+
+
+.caja-productos a{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    flex-direction: column-reverse;
+    color: white;
+}
+
+.PVmain{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding:2rem 0;
+    flex-direction: row;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width:480px){
+
+    .barrainicio{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .nav p{
+        font-size:40px;
+    }
+
+    nav img{
+        width: 50px;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+    nav ul{
+        margin-left: 30px;
+        display:flex;
+        flex-direction:column;
+    }
+    nav li{
+        width: 100%;
+    }
+    nav ul ul{
+        display: none;        
+    }
+    ul ul li{
+        display: block;
+        width: 100%;
+        padding:1rem;
+        background:rgb(124, 61, 3);
+        margin:0.3rem;
+        border-radius: 5px;
+    }
+    .pantallainicio{
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .maininicio{
+        margin-top: 80px;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .producto{
+        margin-top: 80px;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .subproducto{
+        margin-top:20px;
+        display:flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column ;
+    }
+    .caja-productos{
+        width:400px;
+        height:350px;
+        background-color: rgba(151, 148, 148, 0.719);
+        border-radius: 10px;
+        color:antiquewhite;
+        text-align: center;
+        border:solid;
+        border-color: rgb(238, 255, 1);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    
+    }
+    
+    .caja-productos img{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        width: 250px;
+        border-radius: 10px;
+    }
+    .caja-productos a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 30px;
+        flex-direction: column-reverse;
+    }
+    .contacto{
+        margin-top:80px;
+    }
+    .PVmain{
+        margin-top: 80px;
+    }
+    .PaginaVinculada{
+        width:300px;
+        height:300px;
+        background-color: rgba(151, 148, 148, 0.719);
+        border-radius: 10px;
+        color:antiquewhite;
+        text-align: center;
+        border:solid;
+        border-color: rgb(238, 255, 1);
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 10px;
+    }
+    
+    .PaginaVinculada img{
+        width: 250px;
+        margin:15px;
+        border-radius: 10px;
+    }
+    
+    .qsinicio{
+            margin-top: 80px;
+            display:flex;
+            align-items: center;
+            flex-wrap: wrap; 
+    }
+
+    .caja{
+        width:400px;
+        height:auto;
+        background-color: rgba(151, 148, 148, 0.719);
+        border-radius: 10px;
+        color:antiquewhite;
+        margin:10px;
+        padding:5px;
+        text-align: left;
+        font-size: 18px;
+        border:solid;
+        border-color: rgb(238, 255, 1);
+    }
+}
