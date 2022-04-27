@@ -101,10 +101,9 @@ footer p{
     font-size: 60px;
 }
 
-.barrainicio img{
+.barrainicio a{
     display: flex;
-    align-self:flex-start;
-    align-self: right;
+    justify-content: flex-end;
 }
 
 .productos {
@@ -422,7 +421,9 @@ h2{
         align-items: center;
         flex-wrap: wrap;
     }
-
+    .tarjetainicio{
+        width: 100%;
+    }
     .producto{
         margin-top: 80px;
         display:flex;
