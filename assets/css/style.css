@@ -11,6 +11,7 @@ body{
     background-image: linear-gradient(to bottom,rgb(250, 121, 0), rgb(143, 72, 5));
 }
 
+
 .pantallainicio{
     display: grid;
     grid-template-columns: 100%;
@@ -27,6 +28,7 @@ body{
 }
  
 .maininicio{
+    margin-bottom: 450px;
     grid-area: main;
     display: flex;
     align-items: center;
@@ -291,6 +293,7 @@ h2{
 }
 
 .producto{
+    margin-bottom: 450px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -351,6 +354,7 @@ h2{
 }
 
 .PVmain{
+    margin-bottom: 450px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -360,6 +364,7 @@ h2{
 }
 
 .contacto{
+    margin-bottom: 450px;
     display: flex;
     align-items: center;
     justify-content: center;
