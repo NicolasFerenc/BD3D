@@ -14,21 +14,38 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/logobro.png" alt="logoBro"> </a>
-        </div>
-        <ul>
-           <li><a href="../views/productos.html">Productos</a>
-               <ul>
-                   <li><a href="../views/producto_estudio.html"> Piezas para Estudio</a></li>
-                   <li><a href="../views/producto_coleccionables.html"> Piezas Coleccionables</a></li>
-                   <li><a href="../views/producto_hobby.html"> Piezas para Hobby</a></li>
-                   <li><a href="../views/producto_hogar.html"> Piezas para el Hogar</a></li>
-               </ul>
-           <li><a href="../views/quienes_somos.html">Quienes Somos</a></li>
-           <li><a href="../views/paginas_para_descargar_STL.html">Paginas vinculadas</a></li>
-           <li><a href="../views/contacto.html">Contacto</a></li>
-       </ul> 
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">BD3D</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>                  
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="./productos.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productos</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="./producto_estudio.html">Piezas para Estudio</a></li>
+                      <li><a class="dropdown-item" href="./producto_hogar.html">Piezas para el Hogar</a></li>
+                      <li><a class="dropdown-item" href="./producto_hobby.html">Piezas para Hobby</a></li>
+                      <li><a class="dropdown-item" href="./producto_coleccionables.html">Piezas Coleccionables</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./paginas_para_descargar_STL.html">Paginas Vinculadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <div class="logo"> 
+                    <a href="../index.html"><img src="../assets/img/logobro.png" alt="logoBro"> </a>
+                </div>
+            </div>
+        </nav>
     </nav>
     <section>
          <h2>Piezas para Hobby</h2>   
