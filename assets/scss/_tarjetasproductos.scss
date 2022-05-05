@@ -1,0 +1,13 @@
+.BotonProducto{
+    background-color: rgba(255, 255, 0, 0.63);
+    padding:10px;
+    margin:30px;
+    width: 30%;
+    border-radius: 10px;
+    img{
+        border-radius: 10px;
+    }
+    &:hover{
+        color:red;
+    }
+}
