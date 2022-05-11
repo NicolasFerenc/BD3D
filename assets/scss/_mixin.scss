@@ -1,0 +1,7 @@
+@mixin propboton ($bg-color,$bg-colorhover,$colorletra){
+    background-color:$bg-color;
+    color:$colorletra;
+    &:hover{
+        background-color:$bg-colorhover;
+    }
+};

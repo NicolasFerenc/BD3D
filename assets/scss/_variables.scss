@@ -2,4 +2,18 @@ $colorPrimario: #808080;
 $colorSecundario: #2b2a2a;
 $colorTerceario: black;
 $colorTexto: white;
+$botonp:rgba(255, 0, 0, 0.966);
+$botonh:rgba(255, 0, 0, 0.541);
 $tamfuente: 40px;
+
+$justifyContent: (start:start , end:end ,center:center ,around:space-around, evenly:space-evenly , between:space-between);
+
+$alignItems: (start:start , end:end , center:center ,around:space-around , between:space-between);
+
+$boton:(
+    borde:0,
+    padding: 10px 15px,
+    radio:10px,
+    margin:5px,
+);
+

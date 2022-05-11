@@ -1,8 +1,25 @@
+.PV{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+}
+
 .PaginaVinculada{
-    margin-top: 40px;
+    padding:10px;
+    margin:30px;
+    border-radius: 10px;
+    
     img{
         border-radius: 10px;
         border:solid;
         border-color:rgba(255, 255, 0, 0.63);
+    }
+}
+
+@media (max-width:480px){
+    .PaginaVinculada{
+        width: 80%;
     }
 }

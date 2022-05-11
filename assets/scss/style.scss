@@ -1,6 +1,13 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @import "_variables";
 @import "_body";
 @import "_header";
+@import "_grid";
 @import "_mainQS";
 @import "_contacto";
 @import "_tarjetasproductos";
@@ -8,8 +15,4 @@
 @import "_tarjetasinicio.scss";
 @import "_PV";
 @import "_footer";
-
-*{
-    margin:0;
-    padding: 0;
-}
+@import "_mixin";

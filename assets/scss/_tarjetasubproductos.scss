@@ -1,27 +1,49 @@
+@mixin propboton ($bg-color,$bg-colorhover,$colorletra){
+    background-color:$botonp ;
+    color:$colorletra;
+    &:hover{
+        background-color: $bg-colorhover;
+    }
+}
+.subprod{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
 .caja-productos{
     background-color: rgba(255, 255, 0, 0.63);
-    padding:10px;
-    margin:30px;
+    padding:5px;
+    margin:20px;
     width: 30%;
     border-radius: 10px;
+    text-align: center;
     img{
         border-radius: 10px;
+        width: 90%;
     }
     button{
-        background-color: rgba(255, 0, 0, 0.966);
-        margin:5px;
-        padding: 5px;
-        border-radius: 10px;
-        &:hover{
-            background-color: rgba(255, 0, 0, 0.541);
-        }
+        border:map-get($boton , borde );
+        padding: map-get($boton , padding );
+        border-radius: map-get($boton , radio );
+        margin:map-get($boton , margin );
+        @include propboton ($botonp, $botonh,$colorTexto );
+    
     }
     a{
         text-decoration: none;
         color:white;
         font-size: 12px;
+        
     }
     h3{
         font-size: 30px;
+        margin-top: 5px;
     }
+}
+@media (max-width:480px){
+    .caja-productos{
+        width: 80%;
+}
 }

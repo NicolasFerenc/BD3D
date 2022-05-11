@@ -1,13 +1,26 @@
+@mixin propboton ($bg-color,$bg-colorhover,$colorletra){
+    background-color:$bg-color;
+    color:$colorletra;
+    &:hover{
+        background-color:$bg-colorhover;
+    }
+};
+
 .contacto{
     background-color: rgba(255, 255, 0, 0.63);
     padding:10px;
     margin:30px;
     border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
     button{
-        background-color: rgba(255, 0, 0, 0.966);
-        margin-top: 10px;
-        &:hover{
-            background-color: rgba(255, 0, 0, 0.541);
-        }
+        border:map-get($boton , borde );
+        padding: map-get($boton , padding );
+        border-radius: map-get($boton , radio );
+        margin:map-get($boton , margin );
+        @include propboton($botonp, $botonh,$colorTexto )
     }
 }
