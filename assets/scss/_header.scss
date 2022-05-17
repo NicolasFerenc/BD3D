@@ -1,4 +1,7 @@
 header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     background-color: black;
     h1{
         font-size: 60px;
