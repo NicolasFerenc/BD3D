@@ -23,12 +23,6 @@ header {
   background-color: black;
 }
 
-header h1 {
-  font-size: 60px;
-  text-align: center;
-  color: white;
-}
-
 header p {
   font-size: 60px;
   text-align: center;
@@ -39,8 +33,39 @@ header h3 {
   color: white;
 }
 
+.saludo {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 10em;
+  -webkit-animation: anim 4s infinite;
+          animation: anim 4s infinite;
+}
+
+@-webkit-keyframes anim {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes anim {
+  from {
+    width: 0;
+  }
+}
+
 .container-fluid {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .row {
@@ -173,6 +198,21 @@ header h3 {
           align-items: space-between;
 }
 
+.inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (max-width: 480px) {
   .inicio {
     display: -webkit-box;
@@ -210,7 +250,7 @@ header h3 {
   padding: 10px;
   margin: 30px;
   border-radius: 10px;
-  width: 80%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -235,6 +275,22 @@ header h3 {
   background-color: rgba(255, 0, 0, 0.541);
 }
 
+@media (max-width: 480px) {
+  .contacto {
+    width: 100%;
+  }
+}
+
+.tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .BotonProducto {
   background-color: rgba(255, 255, 0, 0.63);
   padding: 5px;
@@ -246,7 +302,7 @@ header h3 {
 
 .BotonProducto img {
   border-radius: 10px;
-  width: 90%;
+  width: 80%;
 }
 
 .BotonProducto:hover {
@@ -348,7 +404,6 @@ header h3 {
           align-items: center;
   justify-content: center;
   margin-top: 40px;
-  margin-left: -10px;
 }
 
 .tarjetasinicio a {
@@ -391,6 +446,7 @@ header h3 {
   border-radius: 10px;
   border: solid;
   border-color: rgba(255, 255, 0, 0.63);
+  width: 100%;
 }
 
 @media (max-width: 480px) {
@@ -400,9 +456,10 @@ header h3 {
 }
 
 footer {
-  padding: 1px;
+  padding: 1rem;
   color: white;
-  margin-top: 400px;
+  margin-top: 500px;
   text-align: center;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

@@ -4,14 +4,14 @@
     &:hover{
         background-color:$bg-colorhover;
     }
-};
+}
 
 .contacto{
     background-color: rgba(255, 255, 0, 0.63);
     padding:10px;
     margin:30px;
     border-radius: 10px;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -22,5 +22,10 @@
         border-radius: map-get($boton , radio );
         margin:map-get($boton , margin );
         @include propboton($botonp, $botonh,$colorTexto )
+    }
+}
+@media (max-width:480px){
+    .contacto{
+        width: 100%;
     }
 }

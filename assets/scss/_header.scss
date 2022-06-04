@@ -2,14 +2,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: black;
-    h1{
-        font-size: 60px;
-        text-align: center;
-        color:white;
-        
-
-    }
+    background-color: black; 
     p{
         font-size: 60px;
         text-align: center;
@@ -18,4 +11,17 @@ header{
     h3{
         color:white;
     }
+}
+.saludo{
+    font-size: 60px;
+    text-align: center;
+    color:white;
+    white-space:nowrap;
+    overflow: hidden;  
+    width: 10em;   
+    animation:anim 4s
+    infinite;      
+}
+@keyframes anim {
+    from{width: 0; }
 }
