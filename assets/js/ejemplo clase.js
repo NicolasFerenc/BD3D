@@ -1,77 +1,87 @@
-//bucles en JS
-//i++     i=i+1
+/*let usuario = prompt("Bienvenido a BD3D, ingrese su Usuario");
+let password = 1234;
 
-/*
-let ingreso = parseInt(prompt("Ingresa un numero"));
-let limite = parseInt(prompt("Ingresa un limite"));
-for (let i = 0; i <= limite; i++) {
-  let resultado = ingreso * i;
-  console.log(ingreso + " * " + i + "=" + resultado);
+for (let i=1; i<=3;i++){
+    let pass = parseInt(prompt("Ingresa tu Contraseña"));
+    if(pass === password){
+        console.log("Login Exitoso");
+        break ;
+    } 
+    else 
+    {
+        console.log("Contraseña Incorrecta, te quedan " + (3-i) + " " +"intentos");
+    }
 }*/
 
-//break
-/*
-let palabraClave = "patatas";
- for (let index = 1; index < 3; index++) {
-  let palabraUsuario = prompt("Ingresa tu palabra clave");
-  if (palabraClave === palabraUsuario) {
-    console.log("Login exitoso");
+/* //switch
+let ingreso = prompt(
+  "Ingresa una opción \n 1-Café solo \n 2-Café con leche \n 3-Té \n 4-Té con leche \n 5-Agua caliente"
+);
+switch (ingreso) {
+  case "1":
+    alert("Seleccionaste Café");
+  case "2":
+    alert("Seleccionaste Café con leche");
     break;
-  } else{
-    console.log("te quedan " + (3 - index) + "intentos");
+  case "3":
+    alert("Seleccionaste Té");
+    break;
+  default:
+    alert("Opción no válida");
+    break;
+}
+//if(ingreso=="1"){}
+//else if(ingreso == "2"){}
+//else if()else{alert(Opcion no valida)} */
+
+//funciones
+//declarar funcion
+/* function saludar() {
+  //codigo a ejecutar
+  alert("Hola cómo estás?");
+} */
+//llamar a la funcion
+//saludar();
+
+/* function solicitarNombre() {  
+  let nombre = prompt("Ingresa tu nombre");
+  alert(nombre);
+}
+solicitarNombre();
+solicitarNombre(); */
+//Funciones con parametros
+/* function saludar(nombre, apellido) {
+  alert("Hola " + nombre + " " + apellido + " cómo estás?");
+}
+let ingresarNombre = prompt("ingresa tu nombre");
+let ingresarApellido = prompt("ingresa tu apellido");
+saludar(ingresarNombre, ingresarApellido); */
+/* 
+function sumar(parametro1, parametro2) {
+  //isNaN()
+  if (isNaN(parametro1) || isNaN(parametro2)) {
+    alert("Los valore ingresado deben ser numeros");
+  } else {
+    alert(parametro1 + parametro2);
   }
-  
 } */
-//continue
+/* let num1 = parseFloat(prompt("Ingresa el primer numero"));
+let num2 = parseFloat(prompt("Ingresa el segundo numero")); 
+//Scope
+//variables globales
+let resultado = 0;
 
-/* for (let index = 0; index <= 10; index++) {
-  if (index == 5 || index == 9) {
-    console.log("salto");
-    continue;
-  }
-  console.log(index);
-} */
-//WHILE o Mientras
-/* let repetir = true;
-while (repetir) {
-  console.log("Soy un bucle while");
-  repetir = false;
-} */
-/* let contador = 0;
-while (contador < 10) {
-  console.log("soy un bucle while");
-  contador++;
-} */
-/*
-let edad = parseInt(prompt("Ingresa tu edad"));
-while (edad < 18) {
-  console.log("No podes pasar tenes menos de 18");
-  //condicion de salida
-  edad = parseInt(prompt("Ingresa tu edad"));
-}*/
+function sumar(n1, n2) {
+  //variables locales
+  resultado = n1 + n2;
+  return resultado;
+}
 
+ console.log(sumar(3, 54));
+let valorDeLaSuma = sumar(3, 54) * 2;
+console.log(valorDeLaSuma); 
 
-/* let palabra = "tomate";
-let palabraIngresada = prompt("Ingresa la palabra clave");
-while (palabra != palabraIngresada) {
-  console.log("Palabra incorrecta");
-  palabraIngresada = prompt("Ingresa la palabra clave");
-} */
-
-//DO WHILE
-/* let condicion = false;
-do {
-  console.log("Yo me ejecuto igual");
-} while (condicion); */
-
-/*
-let continuar = false;
-let passGuardado = "tomates";
-
-do {
-  let password = prompt("Ingresa tu password");
-  if (password == passGuardado) {
-    console.log("Bienvenido/a");
-    continuar = false;
-  }
-} while (continuar); */
+function mostrar(mensaje) {
+  console.log(mensaje);
+}
+mostrar(sumar(34, 6)); */ 
