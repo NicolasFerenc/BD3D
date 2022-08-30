@@ -40,8 +40,10 @@ header h3 {
   white-space: nowrap;
   overflow: hidden;
   width: 10em;
-  -webkit-animation: anim 4s infinite;
-          animation: anim 4s infinite;
+  -webkit-animation: anim 4s
+ infinite;
+          animation: anim 4s
+ infinite;
 }
 
 @-webkit-keyframes anim {
