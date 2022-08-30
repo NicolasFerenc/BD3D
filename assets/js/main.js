@@ -17,10 +17,10 @@ for (let i=1; i<=3;i++){
 }  
 saludar(usuario);
 
-function pago (producto, formadepago){
-    alert("Tu producto sale" + " " +cuota);
+function pago (cuota){
+    alert("Tu producto sale" + " " + "$" +cuota);
 }
-let producto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Producto para el Hogar \n 5- Cotizar");
+let producto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Producto para el Hogar \n 3-Producto de Hobby \n 4-Productos Coleccionables ");
     if(producto==1){
         precio=1500;
         console.log(precio);
@@ -29,7 +29,14 @@ let producto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Product
         precio=1800;
         console.log(precio);
     }
-    
+    else if(producto==3){
+        precio=2000;
+        console.log(precio);
+    }
+    else{
+        precio=2500;
+        console.log(precio);
+    }  
     
 let formadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia bancaria \n 3-mercado pago ");
     if(formadepago==1){
@@ -40,7 +47,10 @@ let formadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia b
         cuota=precio*1.1;
         console.log(cuota);
     }
-    
+    else{
+        cuota=precio*1.3;
+        console.log(cuota);
+    }
+    //necesito poder validar el resto de las opciones de pago
 
-
-pago(producto,formadepago);
+pago(cuota);
