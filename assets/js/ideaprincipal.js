@@ -1,42 +1,52 @@
-function saludar(nombre, producto, formadepago) 
-    {
-        alert("Hola " + nombre + " " + "selecionaste el producto:" + " " + producto + " y te sale:" + formadepago); 
-    };
-  let ingresarNombre = prompt("ingresa tu nombre");
-  let ingresarproducto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Producto para el Hogar \n 3-Producto de Hobby \n 4-Productos Coleccionables \n 5- Cotizar");
-    switch (ingresarproducto) {
-        case "1":
-        alert("Seleccionaste Producto de Estudio");
-        break;
-        case "2":
-        alert("Seleccionaste Producto para el Hogar");
-        break;
-        case "3":
-        alert("Seleccionaste Producto de Hobby");
-        break;
-        case "4":
-        alert("Seleccionaste Productos Coleccionables");
-        break;
-        case "5":
-        alert("Seleccionaste Cotizar");
-        default:
-        alert("Opción no válida");
-        break;
-    };
-  let ingresarformadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia bancaria \n 3-mercado pago ");
-    switch (ingresarformadepago) {
-        case "1":
-        alert("Seleccionaste efectivo");
-        break;
-        case "2":
-        alert("Seleccionaste transferencia bancaria");
-        break;
-        case "3":
-        alert("Seleccionaste mercado pago");
-        break;
-        default:
-        alert("Opción no válida");
-        break;
-    };
-
-  saludar(ingresarNombre, ingresarproducto, ingresarformadepago);
+function saludar (usuario){
+  alert("Hola" + " "+ usuario);
+};
+let usuario= prompt("Bienvenido a BD3D, ingrese su Usuario");
+/*for (let i=1; i<=3;i++){
+  let pass = parseInt(prompt("Ingresa tu Contraseña"));
+  if(pass === password){
+      console.log("Login Exitoso");
+      break ;
+  } 
+  else 
+  {
+      console.log("Contraseña Incorrecta, te quedan " + (3-i) + " " +"intentos");
+  }
+}  */
+saludar(usuario);
+/*
+function pago (cuota){
+    alert("Tu producto sale" + " " + "$" +cuota);
+}
+let producto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Producto para el Hogar \n 3-Producto de Hobby \n 4-Productos Coleccionables ");
+    if(producto==1){
+        precio=1500;
+        console.log(precio);
+    }
+    else if(producto==2){
+        precio=1800;
+        console.log(precio);
+    }
+    else if(producto==3){
+        precio=2000;
+        console.log(precio);
+    }
+    else{
+        precio=2500;
+        console.log(precio);
+    }  
+    
+let formadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia bancaria \n 3-mercado pago ");
+    if(formadepago==1){
+        cuota=precio*.9;
+        console.log(cuota);
+    }
+    else if(formadepago==2){
+        cuota=precio*1.1;
+        console.log(cuota);
+    }
+    else{
+        cuota=precio*1.3;
+        console.log(cuota);
+    }
+pago(cuota);
