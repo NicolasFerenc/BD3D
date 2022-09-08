@@ -1,13 +1,14 @@
 const productos=[];
 
-function Producto(nombre, precio){
+function Producto(nombre, precio,stock){
     this.nombre= nombre;
-    this.precio= parseFloat(precio);    
+    this.precio=parseFloat(precio);
+    this.stock=(stock);    
 }
-const productoNuevo1= new Producto("Producto de Estudio", 1500);
-const productoNuevo2= new Producto("Producto para el Hogar", 1800);
-const productoNuevo3= new Producto("Producto de Hobby", 2000);
-const productoNuevo4= new Producto("Productos Coleccionables", 2500);
+const productoNuevo1= new Producto("Producto de Estudio", 1500,10);
+const productoNuevo2= new Producto("Producto para el Hogar", 1800,20);
+const productoNuevo3= new Producto("Producto de Hobby", 2000,15);
+const productoNuevo4= new Producto("Productos Coleccionables", 2500,5);
 
 function cargarProductos(producto){
     productos.push(producto);
@@ -21,6 +22,8 @@ cargarProductos(productoNuevo4);
 for (const objeto of productos) {
     console.log(objeto);
   }
+
+console.log("El stock actual de tu inventario es:" + " " + productoNuevo1.stock + productoNuevo2.stock + productoNuevo3.stock+ productoNuevo4.stock );
 
   function saludar (usuario){
     alert("Hola" + " "+ usuario);
@@ -49,7 +52,7 @@ let producto = prompt("Ingresa una opción \n 1-Producto de Estudio \n 2-Product
         console.log(precio);
     }  
     else{
-        alert("no elegiste un producto");
+        alert("no elegiste un producto valido");
     }
     
 let formadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia bancaria \n 3-mercado pago ");
@@ -66,6 +69,6 @@ let formadepago = prompt("Ingresa una opción \n 1-efectivo \n 2-transferencia b
         console.log(cuota);
     }
     else{
-        alert("no elegiste un medio de pago");
+        alert("no elegiste un medio de pago validp");
     }
 pago(cuota);
