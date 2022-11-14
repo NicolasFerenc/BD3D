@@ -25,7 +25,7 @@ for (const objeto of productos) {
 
 const inventario= productoNuevo1.stock + productoNuevo2.stock + productoNuevo3.stock+ productoNuevo4.stock; 
 
-console.log("El stock actual de tu inventario es:" + " " + inventario ); //tengo una duda aca, porque me lo toma al valor pero no me lo suma ...esta mal definido? o porque es?
+console.log("El stock actual de tu inventario es:" + " " + inventario );
 
   function saludar (usuario){
     alert("Hola" + " "+ usuario);
